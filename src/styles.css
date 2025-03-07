@@ -1,0 +1,146 @@
+body {
+    font-family: monospace;
+    background-color: #0b0e1d;
+}
+
+main {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: #cba2ea;
+    margin: 30px;
+}
+
+span {
+    font-size: 34px;
+    color: #c3e3f7;
+}
+
+input {
+    border-style: none;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #c3e3f7;
+    color: #0b0e1d;
+}
+
+input::placeholder {
+    color: #0b0e1d;
+}
+
+.calculator {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.start-button {
+    border-style: none;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.calculate-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+.action-button,
+.calc-button {
+    cursor: pointer;
+    border-style: none;
+    border-radius: 30px;
+    width: auto;
+    padding: 10px;
+    font-size: 18px;
+}
+
+button {
+    color: #c3e3f7;
+}
+
+#digit {
+    background-color: #6899d7;
+}
+
+#operation,
+#function {
+    background-color: #4a6da3;
+}
+
+#erase,
+#calculate {
+    color: #0b0e1d;
+    background-color: #cba2ea;
+}
+
+#delete {
+    background-color: #946cb2;
+}
+
+#show-func {
+    background-color: #47688c;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.ans-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #0b0e1d;
+
+}
+
+.title-ans {
+    font-size: 20px;
+    text-align: center;
+    color: #cba2ea;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.out-ans {
+    font-size: 18px;
+    text-align: center;
+    background-color: #c3e3f7;
+    border-radius: 30px;
+    padding: 5px;
+    min-height: 30px;
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <title>Обратный польский калькулятор</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="icon" href="src/img/calc.svg">
+</head>
+
+<body>
+    <main>
+        <h1 class="title"><span>КАЛЬКУЛЯТОР <img class="icon" src="src/img/calc.svg" alt=""></span><br> ОБРАТНОЙ
+            ПОЛЬСКОЙ ЗАПИСИ</h1>
+        <div class="calculator">
+            <input type="text" id="expression" placeholder="Введите выражение" />
+            <div class="calculate-buttons">
+                <button class="calc-button" id="operation">(</button>
+                <button class="calc-button" id="operation">)</button>
+                <button class="calc-button" id="operation">^</button>
+                <button id="erase" class="action-button"><img src="src/img/erase.svg" class="icon"
+                        alt="Стереть"></button>
+                <button class="calc-button" id="digit">1</button>
+                <button class="calc-button" id="digit">2</button>
+                <button class="calc-button" id="digit">3</button>
+                <button class="calc-button" id="operation">+</button>
+                <button class="calc-button" id="digit">4</button>
+                <button class="calc-button" id="digit">5</button>
+                <button class="calc-button" id="digit">6</button>
+                <button class="calc-button" id="operation">-</button>
+                <button class="calc-button" id="digit">7</button>
+                <button class="calc-button" id="digit">8</button>
+                <button class="calc-button" id="digit">9</button>
+                <button class="calc-button" id="operation">!</button>
+                <button class="calc-button" id="operation">/</button>
+                <button class="calc-button" id="digit">0</button>
+                <button class="calc-button" id="operation">*</button>
+                <button class="action-button" id="calculate">=</button>
+            </div>
+            <button class="action-button" id="show-func">f(x)</button>
+            <div class="calculate-buttons hide" id="hide-func">
+                <button class="calc-button" id="function">sin</button>
+                <button class="calc-button" id="function">cos</button>
+                <button class="calc-button" id="function">tan</button>
+                <button class="calc-button" id="function">ctg</button>
+                <button class="calc-button" id="function">sqrt</button>
+                <button class="calc-button" id="function">log</button>
+                <button class="calc-button" id="function">ln</button>
+                <button class="calc-button" id="function">exp</button>
+                <button class="calc-button" id="function">abs</button>
+            </div>
+            <button class="action-button" id="delete"><img src="src/img/delete.svg" class="icon" alt="Удалить"></button>
+
+        </div>
+        <div class="answer">
+            <div class="ans-block">
+                <p class="title-ans">Обратная польская запись</p>
+                <p class="out-ans" id="rpn"></p>
+            </div>
+            <div class="ans-block">
+                <p class="title-ans">Вычисление обратной польской записи</p>
+                <p class="out-ans" id="result"></p>
+            </div>
+        </div>
+        <script src="src/script.js"></script>
+    </main>
+</body>
+
+</html>
